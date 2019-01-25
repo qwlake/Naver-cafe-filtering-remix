@@ -1,0 +1,74 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 2,
+  "name": "naver cafe price filtering",
+  "version": "2.0.8",
+  "description": "naver cafe price filtering",
+  "background": {
+    "scripts": [
+      "/js/background/bgContextMenus.js",
+      "/js/background/bgController.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [
+        "/js/plugin/jquery-3.2.1.min.js",
+        "/js/article_read.js",
+        "/js/common.js"
+      ],
+      "matches": [
+        "https://cafe.naver.com/ArticleRead.nhn?*"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "all_frames": true,
+      "js": [
+        "/js/plugin/jquery-3.2.1.min.js",
+        "/js/article_image.js",
+        "/js/common.js"
+      ],
+      "matches": [
+        "https://cafe.naver.com/ArticleList.nhn?*.boardtype=I*"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "all_frames": true,
+      "js": [
+        "/js/plugin/jquery-3.2.1.min.js",
+        "/js/article_list.js",
+        "/js/common.js"
+      ],
+      "matches": [
+        "https://cafe.naver.com/*List.nhn*"
+      ],
+      "exclude_matches": [
+        "https://cafe.naver.com/ArticleList.nhn?*.boardtype=I*",
+        "https://cafe.naver.com/CafeMemberNetworkArticleList.nhn*"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "/image/on.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "setting.html",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "activeTab",
+    "storage",
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "/image/icon_16.png",
+    "48": "/image/icon_48.png",
+    "128": "/image/icon_128.png"
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="popup.css">
+    <style>
+		
+    </style>
+    <script src="js/plugin/jquery-3.2.1.min.js"></script>
+    <script src="query.js"></script>
+    <script src="setting.js"></script>
+    <script src="popup.js"></script>
+    </head>
+<body>
+
+<input type="hidden" value="active" id="temp">
+
+<div id="control">
+    <span id="act" class="ctrl">On</span>
+    <span style="font:1.5em bold;">/</span>
+    <span id="deact" class="ctrl">Off</span>
+</div>
+
+<div id="filtering">
+    <span><strong>⊙필터링</strong></span>
+    <div class="filter">
+        <a id="add_content">글, 댓글 등록</a>
+        <a id="add_writer">작성자 ID 등록</a>
+    </div>
+</div>
+
+
+<div id="highlight">
+    <span><strong>⊙하이라이트</strong></span>
+    <div class="high">
+        <a id="add_high">키워드 등록</a>
+    </div>
+</div>
+
+<!--가격 설정 메뉴 추가-->
+<div id="pricematch">
+    <span><strong>⊙가격</strong></span>
+    <div class="price">
+        <a id="add_price">가격 등록</a>
+    </div>
+</div>
+
+
+<div id="setting">
+    <a id="set"><strong>관리</strong></a>
+</div>
+
+<div class="filter-now-container">
+    <a id="filter-this">현재 글 작성자 필터링</a>
+    <hr>
+    <a id="filter-by-nick">닉네임으로 ID 등록</a>
+</div>
+
+</body>
+</html>

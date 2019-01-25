@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+    position: relative;
+    width: 180px;
+    min-height: 200px;
+    margin: 2px;
+    padding: 0;
+}
+
+.modal-wrapper {
+
+}
+
+.modal-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.modal-input {
+    display: block;
+    width: 80%;
+    margin: 50% auto;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.modal-input::placeholder {
+    text-align: center;
+}
+
+#filtering, #highlight, #pricematch {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 2px;
+    padding: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#act, #deact {
+    cursor: pointer;
+}
+
+#control {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 2px;
+    padding: 0 5px 3px 5px;
+}
+
+#control .ctrl:hover {
+    color: red;
+}
+
+[id^="add_"] {
+    cursor: pointer;
+    display: block;
+    padding: 3px 5px;
+    margin: 2px;
+}
+
+[id^="add_"]:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+.filter-now-container a {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    padding: 3px 5px;
+}
+
+.filter-now-container a:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+.filter-now-container hr {
+    margin : 0 10%;
+    border-top: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+#setting {
+    /*border: 1px solid black;*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+#set {
+    cursor: pointer;
+    display: block;
+    text-align: right;
+    padding: 3px 5px;
+    margin: 2px;
+
+}
+
+#set:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+}

@@ -1,0 +1,378 @@
+.mg-l0p {
+    margin-left: 0;
+}
+
+.mg-l33p {
+    margin-left: 66%;
+}
+
+.mg-l66p {
+    margin-left: 33%
+}
+
+body {
+    margin: 0;
+    min-width: 530px;
+
+    /*background-color: #efefef;*/
+}
+
+.header-wrapper {
+    width: 100%;
+    background-color: #00be39;
+}
+
+.header-container {
+    position: relative;
+    max-width: 700px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.header-container .main-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    max-width: 100px;
+    max-height: 100px;
+    /*padding-left: 20%;*/
+}
+
+.main-image-wrapper img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.header-menu-wrapper {
+    /*padding-left: calc(20% + 80px);*/
+    padding-left: 100px;
+    height: 100%;
+}
+
+.header-menu {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 60px;
+    margin-right: 5px;
+    height: 30px;
+    padding: 1px 9px 1px;
+    font-size: 15px;
+    line-height: 30px;
+    color: #efefef;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.header-menu:hover {
+    background-color: rgba(0, 158, 47, 0.5);
+}
+
+.header-menu .menu-img {
+    position: relative;
+}
+
+.support-btn {
+    position: relative;
+}
+
+#support-info {
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    width: 250px;
+    padding: 5px;
+    border: 1px solid black;
+    display: none;
+    /*display: inline-block;*/
+    color: black;
+    font-size: 12px;
+    line-height: 25px;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.donate-btn {
+    position: relative;
+    font-size: 13px;
+}
+
+.cc-symbol {
+    font-weight: bold;
+}
+
+.close-info {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    margin: 0 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cc-address-wrapper {
+    position: relative;
+    width: 100%;
+    height: 26px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.cc-address {
+    position: absolute;
+    padding: 0 10px;
+    left: 0;
+    top: 2px;
+    width: 85%;
+    text-align: left;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.cc-copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    background-color: #eee;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+
+}
+.cc-copy img {
+    /*padding: 5px;*/
+    max-height: 100%;
+    max-width: 100%;
+    margin-top: 3px;
+}
+
+.cc-copy:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#donate-info {
+    cursor: auto;
+    z-index: 15000;
+    position: fixed;
+    /*top: 110px;*/
+    left: calc(50% - 150px);
+
+    display: none;
+    padding: 5px;
+    width: 300px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    /*word-break: break-all;*/
+    background-color: white;
+    border-radius: 5px;
+}
+
+.version-info {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: inline-block;
+    text-align: right;
+    color: rgba(255,255,255,0.6);
+}
+
+.content-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.tab-wrapper {
+    padding-left: 3%;
+    height: 36px;
+}
+
+.tab {
+    display: inline-block;
+    min-width: 25%;
+    height: 100%;
+    padding: 5px 3%;
+    font-size: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #00be39;
+    border-bottom: 2px solid #00be39;
+    font-weight: bold;
+}
+
+/*.tab-active {*/
+/*}*/
+
+.add-btn-wrapper {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 36px;
+    padding: 6px 0 6px 0;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+.add-btn-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.manage-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.menu-wrapper {
+    width: 100%;
+    margin-right: 0;
+}
+
+.item-list {
+    display: block;
+    /*display: inline-block;*/
+    width: 100%;
+    min-height: 60px;
+    margin: 10px auto;
+    padding: 7px 10px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    width: calc(33% - 10px);
+    margin: 2px 5px;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.item:hover {
+    background-color: #ddd;
+}
+
+.item:hover .item-meta {
+    display: block;
+}
+
+.item-meta {
+    position: absolute;
+    top: -40px;
+    left: 5%;
+    display: none;
+    width: 90%;
+    height: 40px;
+    padding: 5px 20px 5px 5px;
+    border-radius: 7px 7px 0 0;
+    box-sizing: border-box;
+    background-color: #ddd;
+    text-align: left;
+}
+
+.item-meta div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 10px;
+}
+
+.item-meta div input {
+    width: calc(90% - 16px);
+    font-size: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #ddd;
+    cursor: pointer;
+
+}
+
+.input-cafe {
+}
+
+.input-nick {
+}
+
+.modify-btn {
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    cursor: pointer;
+}
+
+.save-btn {
+    /*display: none;*/
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.save-btn button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding-right: 2px;
+}
+
+.item-key {
+    cursor: pointer;
+
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.add-input {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    width: 50px;
+    height: 23px;
+    background-color: #efefef;
+    padding: 2px 5px;
+    text-align: center;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.add-input:hover, .add-input:focus {
+    background-color: #d6d6d6;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.reset-btn {
+    color: black;
+}
